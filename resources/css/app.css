@@ -1,0 +1,828 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: 'Century Gothic Thin', sans-serif;
+    box-sizing: border-box;
+    transition: 900ms;
+    scrollbar-width: none;
+}
+.none{
+    display: none !important; 
+}
+.seccion-title-text, .seccion-text {
+    padding: 10px 4rem 20px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    color: #7E7E7E;
+}
+.seccion-title-text p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: #7F7F7F;
+}
+.titulo-hs{
+    padding: 1.5rem 5rem 1.5rem;
+    text-align: center;
+    color: #7E7E7E;
+}
+.text-justify{
+    text-align: justify !important;
+    font-size: 1.3rem !important;
+}
+.text-justify li{
+    padding: .3rem;
+}
+ul{
+    font-size: 1rem;
+    color: #7F7F7F;
+}
+ul li{
+    padding: .2rem;
+}
+.fontt{
+    font-size: 1.1rem;
+}
+.iconNav img{
+    width: 7vw;
+}
+.positionNav{
+    display: flex;
+    justify-content: right;
+    justify-items: end;
+    width: 77rem;
+    column-gap: 1rem;
+}
+.offcanvas-body{
+    padding: 2.5rem;
+}
+.nav-link{
+    &:hover{
+        transition: 1000ms;
+        transform: translateY(-10px);
+    }
+}
+.nav-item {
+    list-style:none;
+}
+.videoHome{
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    height: 36vw;
+}
+.videoHome video, .videoContact video{
+    height: 100%;
+    border-radius: 25px;
+}
+.videoContact{
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    height: 23vw;
+}
+footer{
+    background-color: #212529;
+    color: #fff;
+    text-align: justify;
+    padding: 1.3rem;
+    justify-items: center;
+}
+footer ul{
+    list-style: disc;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+.tamDiv1{
+    width: 20rem;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.fonth4{
+    font-size: 1.5rem;
+}
+.divCenterFooter{
+    display: flex;
+    justify-content: space-evenly;
+}
+.divCenter{
+    display: flex;
+    justify-content: center;
+}
+.colorGr{
+    background-color: #f1f3f4;
+    padding: 2%;
+}
+.colorGr h1, .colorGr h2, .colorGr h3, .colorGr h4, .colorGr h5{
+    color: #7E7E7E;
+}
+.colorGr p{
+    color: #7F7F7F;
+}
+.texcenter{
+    text-align: center;
+}
+.color-blanc{
+    background-color: #7e7e7eb6;
+    color: #fff;
+    border-radius: 20px;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 30px;
+    text-align: center;
+}
+.galeria .galeria-item {
+    justify-items: center;
+}
+.galeria .galeria-item, .galeria-imagen{
+    width: 22vw;
+}
+.galeria-imagen{
+    border-radius: 20px;
+}
+.galeria-titulo{
+    font-size: 1.5rem;
+    color: #7E7E7E;
+}
+.cartsHome{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4rem;
+    padding: 30px;
+}
+.cartUno{
+    width: 30vw;
+    text-align: center;
+    justify-items: center;
+    position: relative;
+    border-radius: 20px;
+    transition: 1000ms;
+    overflow: hidden;
+}
+.cartUno img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 1000ms;
+    cursor: pointer;
+}
+.cartUno h3, .cartUno h2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    top: 75%;
+    left: 0;
+    color: #fff;
+    background-color: #7e7e7ea2;
+    font-size: 1.7rem;
+    pointer-events: none;
+}
+.cartwo{
+    width: 23vw;
+    text-align: center;
+    justify-items: center;
+    position: relative;
+    border-radius: 20px;
+    transition: 1000ms;
+    overflow: hidden;
+}
+.cartwo img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 1000ms;
+    cursor: pointer;
+}
+.cartwo h3, .cartwo h2, .carthre h2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    top: 75%;
+    left: 0;
+    color: #fff;
+    background-color: #7e7e7ea2;
+    font-size: 1.7rem;
+    pointer-events: none;
+}
+.carthre{
+    width: 27vw;
+    text-align: center;
+    justify-items: center;
+    position: relative;
+    border-radius: 20px;
+    transition: 1000ms;
+    overflow: hidden;
+}
+.carthre img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 1000ms;
+    cursor: pointer;
+}
+.conInfo{
+    width: 50%;
+    padding: 20px;
+    padding-left: 120px;
+    margin: 10px;
+}
+.conInfo h5{
+    text-align: center;
+}
+.PointBlue{
+    list-style: none;
+    font-size: 1.2rem;
+    color: #7F7F7F;
+}
+.conImg{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.conImg img{
+    width: 20vw;
+}
+.content1 {
+	line-height:150px;
+	margin:0px auto;
+	text-align:center;
+}
+.content1 img{
+	display: inline-block;
+    margin: 10px 20px;
+    vertical-align: middle;
+    width: 100px;
+}
+.servisio-flot-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 598;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.servisio-flot-container.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0s;
+}
+.servisio-flot{
+    display: grid;
+    width: 50%;
+    height: 95%;
+    background-color: #f1f3f4;
+    z-index: 599;
+    position: fixed;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%) scale(0.95);
+    border-radius: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+.servisio-flot-container.show .servisio-flot {
+    transform: translateY(-50%) scale(1);
+}
+.servisio-flot-carocel{
+    text-align: center;
+    align-items: center;
+    display: grid;
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    display: ruby;
+}
+.servisio-flot-carocel img{
+    width: 77%;
+    justify-items: center;
+    justify-content: center;
+    display: grid;
+}
+.servisio-flot-butons{
+    width: 97%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.position-close{
+    display: grid;
+    position: fixed;
+    left: 90%;
+    top: 2%;
+}
+.redesServises{
+    display: flex;
+    justify-content: space-between;
+    width: 16rem;
+    column-gap: .5rem;
+}
+.Buton0{
+    background-color: #7E7E7E;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 3rem;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    &:hover{
+        background-color: #f1f3f4;
+        border: 2px solid #7E7E7E;
+        color: #7E7E7E;
+    }
+}
+.Buton1{
+    font-size: 1.7rem;
+    background-color: #47d111;
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    text-align: center;
+    color: #f1f3f4;
+    border: 2px solid white;
+    &:hover{
+        background-color: #f1f3f4;
+        border: 2px solid #47d111;
+        color: #47d111;
+    }
+}
+.form-div-duple{
+    display: flex;
+}
+.form-div-duple .conInfo{
+    width: 50%;
+    padding: 0px;
+    padding-left: 0px;
+    margin: 0px;
+}
+.form-div-duple .conImg{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.form-div-duple .conImg img{
+    width: 34vw;
+}
+.redesFooter picture img, .redesServises picture img{
+    width: 2vw;
+}
+.redesFooter{
+    display: flex;
+    justify-content: space-between;
+    width: 9rem;
+    column-gap: .5rem;
+}
+.btn-flotante {
+	position: fixed;
+	bottom: 50px;
+	right: 30px;
+	transition: all 300ms ease 0ms;
+	z-index: 100;
+    animation: pulse 1.25s infinite cubic-bezier(0.66,0,0,1);
+    box-shadow: 0 0 0 0 #27d367;
+    border-radius: 50%;
+    transition:     .3s ease-in-out;
+}
+.btn-flotante img{
+    width: 70px;
+}
+.btn-flotante img:hover {
+    border-radius: 50%;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: scale(1.3);
+    transition:     .3s ease-in-out;
+}
+@keyframes pulse{
+    100% {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0.01);
+    }
+}
+.seccion-text {
+    padding: 30px 1rem 20px;
+}
+.seccion-text p{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.contac-formul{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 5px 5px 5px;
+}
+.contac-formul-div input{
+    border-radius: 20px;
+    height: 4rem;
+}
+.contac-formul-div-politics{
+    text-align: justify;
+    padding: 0px 10px 0px;
+}
+.contac-formul-div textarea{
+    width: 39rem;
+    border-radius: 20px;
+} 
+.contac-formul-div-politics input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+}
+.contac-formul-div-politics input[type="checkbox"]:checked + label::before {
+    background-color: #1aff00; 
+}
+.contac-formul-div-politics input[type="checkbox"]:checked + label::after {
+    content: "\2022"; 
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    color: #000000; 
+    font-size: 18px;
+}
+button[type="submit"] {
+    font-size: 1.3rem;
+    background-color: #47d111;
+    padding: 0.6rem;
+    border-radius: 10px;
+    text-decoration-color: #0000006b;
+    text-decoration: none;
+    color: #fff;
+}
+.TarjetBlog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+    row-gap: 4rem;
+    margin: 10px;
+    border-radius: 50px;
+    &:hover{
+        border: 1.5px solid #7E7E7E;
+    }
+}
+.TarjetBlog img{
+    width: 17vw;
+    border-radius: 50px 0px 0px 50px ;
+}
+.TarjetBlog div{
+    width: 25rem;
+    text-align: center;
+    background-color: #f1f3f4;
+    border-radius: 0px 50px 50px 0px ;
+}
+.TarjetBlog h2{
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #7E7E7E;
+    pointer-events: none;
+}
+.TarjetBlog p{
+    padding: .7rem;
+    text-align: justify;
+    color: #7F7F7F;
+    pointer-events: none;
+}
+details{
+    padding: .4rem 3rem .4rem;
+    position: relative;
+    overflow: hidden;
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50vw;
+}
+details p {
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #7F7F7F;
+    font-size: 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #7E7E7E;
+    padding: 1rem;
+    display: flex;
+}
+details summary h2{
+    font-size: 1.4rem;
+}
+details[open] p {
+    max-height: 500px; /* Un valor suficientemente grande */
+    opacity: 1;
+    animation: expand 0.3s ease-in-out;
+}
+@keyframes expand {
+    0% {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .seccion-title-text section{
+        position: relative;
+        z-index: 2;
+    }
+    .seccion-title-text p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .titulo-hs{
+        padding: 30px 2rem 20px;
+    }
+    .videoHome{
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+        height: 36vw;
+    }
+    .videoHome video{
+        height: 100%;
+        border-radius: 25px;
+    }
+    .iconNav img{
+        width: 10vw;
+    }
+    .divCenterFooter{
+        display: grid;
+        justify-content: space-between;
+    }
+    .redesFooter picture img, .redesServises picture img{
+        width: 6vw;
+    }
+    .positionNav{
+        width: 33rem;
+    }
+    .cartUno h3, .cartwo h3, .cartUno h2, .cartwo h2{
+        width: 100%;
+        height: 45%;
+        top: 65%;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+    .contac-formul{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr ;
+        row-gap: 10px;
+        padding: 5px 5px 5px;
+    }
+    .contac-formul-div input{
+        border-radius: 20px;
+        height: 4rem;
+    }
+    .contac-formul-div-politics input{
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    .contac-formul-div textarea{
+        width: 23rem;
+        border-radius: 20px;
+    } 
+    .contac-formul-div-politics{
+        width: 22rem;
+        padding: 0px 10px 0px;
+    }
+    .form-div-duple .conInfo{
+        width: 69%;
+    }
+    .form-div-duple .conImg{
+        width: 31%;
+    }
+    .form-div-duple .conImg img{
+        width: 31vw;
+    }
+    .seccion-text {
+        padding: 30px 2rem 20px;
+    }
+    .position-close{
+        left: 85%;
+    }
+    .servisio-flot{
+        width: 87%;
+        left: 7%;
+        height: 85%;
+    }
+    .TarjetBlog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 4rem;
+        padding: 10px;
+    }
+    .TarjetBlog img{
+        width: 20vw;
+        border-radius: 30px 0px 0px 30px ;
+    }
+    .TarjetBlog div{
+        width: 11rem;
+        border-radius: 0px 30px 30px 0px ;
+    }
+    .TarjetBlog h2{
+        font-size: 1.1rem;
+        padding: .5rem;
+        color: #7E7E7E;
+    }
+    .TarjetBlog p{
+        color: #7F7F7F;
+        font-size: .7rem;
+    }
+}
+@media (max-width: 767px) {
+    .seccion-title-text p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .seccion-title-text section{
+        position: relative;
+        z-index: 2;
+    }
+    .seccion-title-text{
+        padding: 10px 0px 10px;
+    }
+    .titulo-hs{
+        padding: 30px 0px 20px;
+        font-size: 1.5rem;
+    }
+    .videoHome, .videoContact{
+        display: flex;
+        justify-content: center;
+        border-radius: 0px;
+        height: 45vw;
+    }
+    .videoHome video{
+        height: 100%;
+        border-radius: 0px;
+    }
+    .Buton1{
+        font-size: 1.1rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .iconNav img{
+        width: 20vw;
+    }
+    .divCenterFooter{
+        display: grid;
+        justify-content: space-between;
+    }
+    .divCenter{
+        display: grid;
+    }
+    .redesFooter picture img, .redesServises picture img{
+        width: 7vw;
+    }
+    .positionNav{
+        width: 12rem;
+    }
+    .galeria .galeria-item{
+        width: 41vw;
+    }
+    .cartsHome{
+        display: grid;
+        justify-content: space-between;
+        padding: 30px;
+        row-gap: 1rem;
+    }
+    .cartUno, .cartwo, .carthre{
+        width: 80vw;
+    }
+    .cartUno h3, .cartwo h3, .carthre h3, .cartUno h2, .cartwo h2, .carthre h2{
+        top: 73%;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    .flex{
+        display: grid;
+    }
+    .conInfo{
+        width: 100%;
+        padding: 20px;
+        padding-left: 40px;
+        margin: 2px;
+    }
+    .conInfo h5{
+        text-align: center;
+    }
+    .conImg{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .conImg img{
+        width: 50vw;
+    }
+    .seccion-text p{
+        font-size: .8rem;
+        text-align: justify;
+    }
+    .contac-formul{
+        grid-template: 1fr / 1fr ;
+        row-gap: 10px;
+        padding: 5px 5px 5px;
+    }
+    .contac-formul-div input{
+        border-radius: 20px;
+        height: 4rem;
+    }
+    .contac-formul-div-politics input{
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    .contac-formul-div textarea{
+        width: 18rem;
+        border-radius: 20px;
+    } 
+    .contac-formul-div-politics{
+        width: 18rem;
+        text-align: justify;
+        padding: 0px 5px 0px;
+    }
+    .form-div-duple{
+        display: grid;
+    }
+    .form-div-duple .conInfo{
+        width: 100%;
+    }
+    .form-div-duple .conImg{
+        width: 100%;
+    }
+    .form-div-duple .conImg img{
+        width: 50vw;
+    }
+    .seccion-text {
+        padding: 25px 1rem 20px;
+    }
+    .position-close{
+        left: 89%;
+    }
+    .servisio-flot{
+        width: 87%;
+        left: 7%;
+        height: 60%;
+    }
+    .galeria .galeria-item, .galeria-imagen{
+        width: 41vw;
+    }
+    .TarjetBlog{
+        display: grid;
+        row-gap: 0rem;
+    }
+    .TarjetBlog img{
+        width: 77vw;
+        border-radius: 10px 10px 10px 10px ;
+    }
+    .TarjetBlog div{
+        width: 77vw;
+        text-align: center;
+        background-color: #f1f3f4;
+        border-radius: 10px 10px 10px 10px ;
+    }
+    .TarjetBlog h2{
+        font-size: 1.2rem;
+        padding: 1rem;
+        color: #7E7E7E;
+    }
+    .Buton0{
+        font-size: 1.1rem;
+        height: 3.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    summary {
+        padding: 1rem;
+        border-radius: 10px;
+        width: 80vw;
+    }
+    details summary h2{
+        font-size: 1.2rem;
+    }
+}
